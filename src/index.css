@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.2s ease;
+  }
+  .animate-slideUp {
+    animation: slideUp 0.25s ease;
+  }
+}
